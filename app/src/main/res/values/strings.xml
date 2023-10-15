@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Maxpro</string>
+    <string name="search_hint">Enter name</string>
+    <string name="no_search_results_found">User not found</string>
+
+
+</resources>
