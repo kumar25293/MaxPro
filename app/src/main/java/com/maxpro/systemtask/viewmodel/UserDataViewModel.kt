@@ -54,7 +54,7 @@ class UserDataViewModel @Inject constructor(private val usecase: UserDataUseCase
         reputationLimit: String,
         site: String
     ) {
-        viewModelScope.launch {
+       val job = viewModelScope.launch {
             usecase.execute(pageNum,pageLimit,sortingType,sortBy,reputationLimit,site)
                 .onStart {
                     setLoading()
